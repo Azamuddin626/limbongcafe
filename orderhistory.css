@@ -1,0 +1,49 @@
+* {
+  font-family: 'Fredoka One', 'cursive';
+}
+.header{
+margin: 10px;
+}
+.order-date{
+  border: 1px;
+  border-style:solid;
+  border-radius: 1%;
+}
+.date-title{
+  margin-left:  10px;
+  
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-between;
+}
+.item {
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #d6dfe1;
+  border-radius: 2%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px;
+  border-style:solid;
+  border-radius: 1%;
+}
+.item-detail{
+  width: 30%;
+  margin-left:10px;
+  
+}
+.label {
+  text-align: center;
+  margin: 20px;
+}
+.price{
+  margin-right: 30px;
+  text-align: right;
+}

@@ -1,0 +1,257 @@
+  @charset "utf-8";
+
+  * {
+    font-family: 'Fredoka One', 'cursive';
+  }
+
+  html body{
+    background-color: #fcba04;
+  }
+  /* NAVIGATION BAR */
+  nav {
+    height: 65px;
+    background: linear-gradient(to bottom, #24262b, #3f4247); /* set linear gradient background */
+  }
+  nav.fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .sticky-wrapper {
+    position: sticky;
+    top: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .nav-item {
+    margin: 0 10px;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  .nav-link:hover {
+    background: linear-gradient(to right, #fcbf49, #d62828);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: navbar-fade 1s ease-in 1s;
+  }
+  @keyframes navbar-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  a.dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  a.dropdown-item:hover {}
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul a {
+    height: 65px;
+    line-height: 65px;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  /* Edit Information Section */
+  .edit-info-section {
+    background-color: #fcba04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 65px; /* height of the navigation bar */
+    padding-bottom: 100px; /* Add some padding to the bottom of the section */
+    z-index: 1; /* Set a high z-index value to ensure that the tab menu stays above other content */
+  }
+  .edit-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #fcba04;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 45px; /* add this */
+    margin-bottom: 25px; /* add this */
+  }
+  .edit-info-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .edit-info-box .change-photo-button {
+    margin-bottom: 20px;
+  }
+  .edit-info-box label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .edit-info-box input[type="text"], .edit-info-box input[type="email"], .edit-info-box input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .edit-info-box input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .edit-info-box .save-button {
+    display: block;
+    width: 100%;
+    background-color: #00BDD5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .edit-info-box .save-button .clicked {
+    background-color: green;
+  }
+  .edit-info-box label {
+    display: block;
+    margin-bottom: -15px;
+  }
+  .edit-info-box .gender-label {
+    margin-bottom: 10px;
+  }
+
+
+
+
+  /*FOOTER*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .footer-container {
+    max-width: auto;
+    margin: auto;
+    z-index: 999; /* Set a high z-index value to ensure that the tab menu stays above other content */
+    bottom:0;
+    position: sticky;
+
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+  }
+  .footer {
+    height: flex; /* set fixed height for footer */
+    background: linear-gradient(to bottom, #24262b, #3f4247); /* set linear gradient background */
+    padding: 25px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Set a high z-index value to ensure that the tab menu stays above other content */
+  }
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fca311;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  @media(max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media(max-width: 574px) {
+    .footer-col {
+      width: 100%;
+    }
+  }

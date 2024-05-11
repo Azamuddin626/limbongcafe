@@ -1,0 +1,348 @@
+* {
+  font-family: 'Fredoka One', 'cursive';
+}
+
+/*NAVIGATION*/
+nav {
+  height: 65px;
+  background: linear-gradient(to bottom, #24262b, #3f4247); /* set linear gradient background */
+z-index: 1;
+}
+nav.fixed {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  z-index: 99;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.nav-item {
+  margin: 0 10px;
+}
+.nav-link {
+  padding: 0;
+}
+.nav-link:hover {
+  background: linear-gradient(to right, #fcbf49, #d62828);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: navbar-fade 1s ease-in 1s;
+}
+@keyframes navbar-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul a {
+  height: 65px;
+  line-height: 65px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* /NAVBAR */
+/*Content*/
+.title-checkout{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.item {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #d6dfe1;
+  border-radius: 2%;
+}
+.header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #24262b;
+  color: #d6dfe1;
+}
+.label {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  text-align: center;
+  padding: 10px;
+}
+input[type="submit"] {
+  background-color: #ffbf25;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-style: groove;
+  border-radius: 5px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+}
+input[type="submit"]:hover{
+  background-color: #a77d1a;
+}
+.popbutton {
+  text-align: center;
+  padding: 20px;
+}
+/* Delete prompt */
+/* * {box-sizing: border-box;} */
+button {
+  position:static ;
+  background-color: #ff0000a0;
+  color: white;
+  padding: 10px 5px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  opacity: 0.9;
+  z-index: 1;
+  border-radius: 5%;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+.deletebtn {
+  background-color: #f44336;
+}
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+#id01{
+  z-index: -0;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: -1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+
+
+/*FOOTER*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  margin-left: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fca311;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+/* back to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  border: none;
+  background-color: #ffbf25;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  width: 40px;
+}
+#myBtn:hover {
+  background-color: #FC493e;
+}
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/* Responsive layout - make the items stack vertically on smaller screens */
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+  }
+}

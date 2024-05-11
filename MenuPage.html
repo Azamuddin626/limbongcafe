@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSSMenupage.css">
+  <script src="JSEditInformation.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="JSEmainNAV.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+</head>
+
+<body>
+
+  <!-- navigation bar -->
+
+  <div class="container-fluid sticky-wrapper px-0">
+    <nav class="navbar navbar-expand-lg  z-3 py-0">
+      <div class="container-fluid main-nav" style="top: 0%; margin: 0; padding-top: 0%;"> <a
+          class="navbar-brand text-white" href="#">Jom Limbong!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
+            class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav justify-content-center" style="top: 0;">
+            <li class="nav-item"> <a class="nav-link text-white active" style="padding: 0%;" aria-current="page"
+                href="#">Home</a> </li>
+            <li class="nav-item dropdown"> <a class="nav-link text-white dropdown-toggle" style="padding: 0%;" href="#"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Western</a></li>
+                <li><a class="dropdown-item" href="#">Nasi</a></li>
+                <li><a class="dropdown-item" href="#">Burger</a></li>
+                <li><a class="dropdown-item" href="#">Roti</a></li>
+                <li><a class="dropdown-item" href="#">Desert</a></li>
+                <li><a class="dropdown-item" href="#">Drink</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"> <a class="nav-link text-white" style="padding: 0%;" href="#">Contact Us</a> </li>
+            <li class="nav-item"> <a class="nav-link text-white" style="padding: 0%;" href="review.html">Reviews</a>
+            </li>
+            <li class="nav-item"> <a class="nav-link text-white" style="padding: 0%;" href="#">My Cart <img
+                  src="trolley.png" alt="Add To Cart" style="height: 20px; width: 20px;"></a> </li>
+            <li class="nav-item"> <a class="nav-link text-white" style="padding: 0%;" href="#">My Favourite <img
+                  src="favourite.png" alt="Favourite" style="height: 20px; width: 20px;"></a> </li>
+            <li class="nav-item dropdown"> <a class="nav-link text-white dropdown-toggle" style="padding: 0%;" href="#"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false"> My Account <img src="user (1).png  "
+                  alt="" style="height: 20px; width: 20px;"> </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Log In</a></li>
+                <li><a class="dropdown-item" href="login.html">Edit Information</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--Category Nav-->
+  <div class="categorynavbar">
+    <p>CATEGORY</p>
+    <a href="#western">WESTERN</a> <a href="#nasi">NASI</a> <a href="#burger">BURGER</a> <a href="#roti">ROTI</a> <a
+      href="#desert">DESERT</a> <a href="#drink">DRINK</a>
+  </div>
+
+  <!-- Search box -->
+  <form class="search-form" onsubmit="performSearch(); return false;">
+    <input style="padding: 10px 20px;" type="text" placeholder="Search...">
+    <button style="background-color: #ff686b; margin-left:10px; padding: 10px 10px; border-radius: 25px ;" type="submit">Go</button>
+  </form>
+
+  <!-- Create the tab menu -->
+  <ul class="tab-menu">
+    <!-- Add the "data-tab" attribute to each tab menu item -->
+    <li class="active" data-tab="western" style="padding: 0%;">WESTERN</li>
+    <li data-tab="nasi">NASI</li>
+    <li data-tab="burger">BURGER</li>
+    <li data-tab="roti">ROTI</li>
+    <li data-tab="desert">DESERT</li>
+    <li data-tab="drink">DRINK</li>
+  </ul>
+
+  <!-- Create the tab content -->
+  <div class="tab-content active" id="western">
+    <!-- Add content for the WESTERN tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\western\chicken-chop.png" alt="chicken chop">
+      <div class="description"> Chicken Chop<br>
+        RM 9.90 <br>
+      </div>
+    </div>
+    <!-- Create the second box -->
+    <div class="box"> <img src="Menu\western\fries.png" alt="fries">
+      <div class="description"> Fries<br>
+        RM 5.50</div>
+    </div>
+
+    <!-- Create the third box -->
+    <div class="box"> <img src="Menu\western\lamp-chop.png" alt="lamb chop">
+      <div class="description"> Lamb Chop<br>
+        RM 9.90</div>
+    </div>
+  </div>
+  <div class="tab-content" id="nasi">
+    <!-- Add content for the NASI tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\nasi\nasi-goreng.png" alt="nasi goreng">
+      <div class="description"> Fried Rice with egg<br>
+        RM 6.00<br>
+      </div>
+    </div>
+
+    <!-- Create the second box -->
+    <div class="box"> <img src="Menu\nasi\Nasi Ayam Putih.jpg" alt="nasi ayam putih">
+      <div class="description"> White Chicken Rice<br>
+        RM 6.00<br>
+      </div>
+    </div>
+
+    <!-- Create the third box -->
+    <div class="box"> <img src="Menu\nasi\chickenrRice.jpg" alt="nasi ayam">
+      <div class="description"> Chicken Rice <br>
+        RM 6.00 <br>
+      </div>
+    </div>
+
+    <!-- Create the fourth box -->
+    <div class="box"> <img src="Menu\nasi\nasiayampenyet.jpg" alt="nasi ayam penyet">
+      <div class="description"> Nasi Ayam Penyet <br>
+        RM 6.00 <br>
+      </div>
+    </div>
+
+    <!-- Create the fifth box -->
+    <div class="box"> <img src="Menu\nasi\nasikakwok.jpg" alt="nasi kakwok">
+      <div class="description"> Nasi Kakwok <br>
+        RM 5.00 <br>
+      </div>
+    </div>
+
+    <!-- Create the sixth box -->
+    <div class="box"> <img src="Menu\nasi\nasilemakayam.png" alt="nasi lemak ayam">
+      <div class="description"> Nasi Lemak Ayam <br>
+        RM 6.00 <br>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="burger">
+    <!-- Add content for the BURGER tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\burger\burger.png" alt="burger ayam special">
+      <div class="description"> Chicken Burger Special <br>
+        RM 5.00 <br>
+      </div>
+    </div>
+
+    <!-- Create the second box -->
+    <div class="box"> <img src="Menu\burger\Cheeseburger with fries.png" alt="burger">
+      <div class="description"> Cheeseburger with fries <br>
+        RM 10.00 <br>
+      </div>
+    </div>
+
+    <!-- Create the third box -->
+    <div class="box"> <img src="Menu\burger\burgerdaging.png" alt="burger daging special">
+      <div class="description"> Beef Burger Special <br>
+        RM 5.00 <br>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="roti">
+    <!-- Add content for the ROTI tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\roti\roticanai.png" alt="roti canai">
+      <div class="description"> Roti Canai<br>
+        RM 1.50<br>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="desert">
+    <!-- Add content for the DESERT tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\desert\ice-cream.png" alt="ice cream">
+      <div class="description"> Ice Cream <br>
+        RM 4.00<br>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="drink">
+    <!-- Add content for the DRINK tab here -->
+    <!-- Create the first box -->
+    <div class="box"> <img src="Menu\drink\orangejuice.png" alt="Orange Juice">
+      <div class="description"> Orange Juice <br>
+        RM 3.00 <br>
+      </div>
+    </div>
+  </div>
+
+  <script src="JSMenuPage.js"></script>
+  <script src="JSCategorynavbar.js"></script>
+  </div>
+
+<!--FOOTER-->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="row" style="display: flex;">
+      <div class="footer-col" style="flex: 1;">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="favourite.html">Favourite</a></li>
+          <li><a href="order-information.html">My Account</a></li>
+          <li><a href="ContactUsPage.html">Contact Us</a></li>
+          <li><a href="review.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="flex: 1;">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="MenuPage.html">WESTERN</a></li>
+          <li><a href="MenuPage.html">NASI</a></li>
+          <li><a href="MenuPage.html">BURGER</a></li>
+          <li><a href="MenuPage.html">ROTI</a></li>
+          <li><a href="MenuPage.html">DESERT</a></li>
+          <li><a href="MenuPage.html">DRINK</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="flex: 1;">
+        <h4>Your Order</h4>
+        <ul>
+          <li><a href="checkout.html">Add to Cart</a></li>
+          <li><a href="order-information.html">Order Information</a></li>
+          <li><a href="EditInformationPage.html">Edit Information</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="go-up.png" alt="Back To Top"
+style="height: 30px; width: 30px;"></button>
+
+</body>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }</script>
+</html>

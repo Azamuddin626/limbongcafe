@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Order History</title>
+    <link rel="stylesheet" href="orderhistory.css">
+</head>
+
+<body>
+    <!--CONTENT-->
+    <div class="header">
+        <h2>Order History</h2>
+    </div>
+    <div class="order-date">
+        <div class="container">
+            <div class="date-title">
+                <h3>Date: 12/1/2023</h3>
+            </div>
+            <div class="item">
+                <a href="menu.html">
+                    <img src="ImageLimbong\chicken-chop.png" alt="chicken Chop" width="300px"></a>
+                <div class="item-detail">
+                    <center>
+                        <h3>Chicken Chop</h3>
+                    </center>
+                    <label for="quantity">Quantity:2 </label>
+                    <p>Price: RM18.80</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="ImageLimbong\roticanai.png" alt="roticanai" width="300px">
+                <div class="item-detail">
+                    <center>
+                        <h3>Roti Canai</h3>
+                    </center>
+                    <label for="quantity">Quantity:1 </label>
+                    <p>Price: RM1.50</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="ImageLimbong\orangejuice.png" alt="chicken Chop" width="300px">
+                <div class="item-detail">
+                    <center>
+                        <h3>Orange Juice</h3>
+                    </center>
+                    <label for="quantity">Quantity:1 </label>
+                    <p>Price: RM3</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="price">
+            <h3>Price: <span style="color:red;">RM 23.30</span></h3>
+        </div>
+    </div>
+    <br>
+    <div class="order-date">
+        <div class="container">
+            <div class="date-title">
+                <h3>Date: 15/1/2023</h3>
+            </div>
+            <div class="item">
+                <a href="menu.html">
+                    <img src="ImageLimbong\ice-cream.png" alt="ice-cream" width="300px"></a>
+                <div class="item-detail">
+                    <center>
+                        <h3>Ice Cream</h3>
+                    </center>
+                    <label for="quantity">Quantity:2 </label>
+                    <p>Price: RM8</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="ImageLimbong\fries.png" alt="fries" width="300px">
+                <div class="item-detail">
+                    <center>
+                        <h3>Fries</h3>
+                    </center>
+                    <label for="quantity">Quantity:1 </label>
+                    <p>Price: RM5.50</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="ImageLimbong\nasiayampenyet.jpg" alt="nasi ayam penyet" width="300px">
+                <div class="item-detail">
+                    <center>
+                        <h3>Nasi Ayam Penyet</h3>
+                    </center>
+                    <label for="quantity">Quantity:1 </label>
+                    <p>Price: RM6</p>
+                    <center><button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="price">
+            <h3>Price: <span style="color:red; ;">RM 19.50</span></h3>
+        </div>
+    </div>
+</body>
+<script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }</script>
+
+</html>
